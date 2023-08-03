@@ -1,6 +1,6 @@
 module github.com/nephio-project/nephio/operators/nephio-controller-manager
 
-go 1.20
+go 1.17
 
 replace (
 	github.com/GoogleContainerTools/kpt/porch => github.com/GoogleContainerTools/kpt/porch v0.0.0-20230526213300-77a54e3b8e88
@@ -13,7 +13,7 @@ replace (
 )
 
 require (
-	github.com/nephio-project/nephio/controllers/pkg v0.0.0-20230531154408-a4237c40cb76
+	github.com/nephio-project/nephio/controllers/pkg v0.0.0-20230724195903-feb6c2f91cc3
 	github.com/nokia/k8s-ipam v0.0.4-0.20230628092530-8a292aec80a4
 	go.uber.org/zap v1.24.0
 	golang.org/x/exp v0.0.0-20230515195305-f3d0a9c9a5cc

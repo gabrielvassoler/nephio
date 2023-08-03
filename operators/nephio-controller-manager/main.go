@@ -31,6 +31,7 @@ import (
 	"github.com/nokia/k8s-ipam/pkg/proxy/clientproxy/ipam"
 	"github.com/nokia/k8s-ipam/pkg/proxy/clientproxy/vlan"
 	"go.uber.org/zap/zapcore"
+
 	//"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
@@ -49,6 +50,8 @@ import (
 	//+kubebuilder:scaffold:imports
 
 	// Import our reconcilers
+	_ "/home/gabriel/Documents/nephio/controllers/pkg/reconcilers/rnp-reconciler"
+
 	_ "github.com/nephio-project/nephio/controllers/pkg/reconcilers/approval"
 	_ "github.com/nephio-project/nephio/controllers/pkg/reconcilers/bootstrap-packages"
 	_ "github.com/nephio-project/nephio/controllers/pkg/reconcilers/bootstrap-secret"
